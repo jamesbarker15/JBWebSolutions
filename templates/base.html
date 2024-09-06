@@ -3,23 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="JB Web Solutions provides cloud services, software development, and IT management tailored for small businesses. We help simplify IT tasks with cutting-edge solutions to help your business grow." />
+    <meta name="keywords" content="Cloud Services, IT Management, Software Development, DevOps, Web Development, Small Business IT, Cloud Migration, Infrastructure Automation, AWS, Scalable Systems" />
+    <meta name="author" content="JB Web Solutions" />
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="JB Web Solutions - Cloud Services & Software Development" />
+    <meta property="og:description" content="JB Web Solutions offers top-notch IT services for small businesses, including cloud migration, DevOps, and custom web development." />
+    <meta property="og:image" content="{{ url_for('static', filename='assets/1.png') }}" />
+    <meta property="og:url" content="https://www.jbwebsolutions.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JB Web Solutions - Smart IT Solutions for Small Businesses" />
+    <meta name="twitter:description" content="Providing cloud services, IT management, and software development for small businesses to grow and succeed." />
+    <meta name="twitter:image" content="{{ url_for('static', filename='assets/1.png') }}" />
+
     <title>{% block title %}JB Web Solutions{% endblock %}</title>
-    <!-- Favicon-->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- Bootstrap icons-->
+
+    <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
 </head>
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
                 <a class="navbar-brand" href="{{ url_for('home') }}"><span class="fw-bolder text-primary">JB Web Solutions</span></a>
@@ -38,25 +59,21 @@
         {% block content %}{% endblock %}
     </main>
 
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; JB Web Solutions 2023</div></div>
+                <div class="col-auto"><div class="small m-0">Copyright &copy; JB Web Solutions 2024</div></div>
                 <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
+    <!-- Core theme JS -->
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
