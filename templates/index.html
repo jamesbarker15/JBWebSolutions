@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - JB Web Solutions{% endblock %}
+
+{% block content %}
+<header class="py-5">
+    <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-xxl-5">
+                <!-- Header text content-->
+                <div class="text-center text-xxl-start">
+                    <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                        <div class="text-uppercase">Cloud Services &middot; Software Development &middot; IT Management</div>
+                    </div>
+                    <div class="fs-3 fw-light text-muted">Smart IT Solutions</div>
+                    <h1 class="display-3 fw-bolder mb-5">
+                        <span class="text-gradient d-inline">For Small Businesses</span>
+                    </h1>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ url_for('services') }}">Our Services</a>
+                        <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ url_for('contact') }}">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-7">
+                <!-- Header profile picture-->
+                <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                    <div class="profile bg-gradient-primary-to-secondary">
+                        <img class="profile-img" src="{{ url_for('static', filename='assets/1.png') }}" alt="..." />
+                        <div class="dots-1">
+                            <!-- SVG Dots... (rest of your SVGs) -->
+                        </div>
+                        <div class="dots-2">
+                            <!-- SVG Dots... (rest of your SVGs) -->
+                        </div>
+                        <div class="dots-3">
+                            <!-- SVG Dots... (rest of your SVGs) -->
+                        </div>
+                        <div class="dots-4">
+                            <!-- SVG Dots... (rest of your SVGs) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section-->
+<section class="bg-light py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+                <div class="text-center my-5">
+                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Us</span></h2>
+                    <p class="lead fw-light mb-4">At JB Web Solutions, we provide cutting-edge IT services to help small businesses thrive in the digital age. With expertise in cloud migration, DevOps, and website development, we simplify complex IT tasks so you can focus on what you do best—running your business.</p>
+                    <p class="text-muted">With years of experience in cloud technologies like AWS, infrastructure automation, and custom web solutions, we partner with you to create scalable, efficient, and secure systems. Whether you're just starting your digital journey or looking to optimize your current IT setup, we are here to provide the solutions you need to grow.</p>
+                    <p class="text-muted">Our services are tailored to meet the unique needs of small businesses, ensuring you get enterprise-level support at a cost that fits your budget. Let us help you leverage technology to its fullest potential, making your operations smoother, more efficient, and future-proof.</p>
+                    <div class="d-flex justify-content-center fs-2 gap-4">
+                        <a class="text-gradient" href="https://twitter.com/yourtwitter"><i class="bi bi-twitter"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/yourlinkedin/"><i class="bi bi-linkedin"></i></a>
+                        <a class="text-gradient" href="https://github.com/jamesbarker15"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
